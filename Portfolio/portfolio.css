@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* CSS gradient background design */
+    background: linear-gradient(135deg, #bb33b6, #243b55);
+}
+
+/* Navigation */
+.portfolio-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff; 
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.navbar1 {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px #aaaaaa;
+    padding: 10px 0;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #0056b3;
+    border-bottom: 2px solid blue;
+}
+
+/* Animated Text */
+.animated-text::after {
+    content: "Full Stack Developer";
+    display: inline-block;
+    font-weight: bold;
+    color: darkgray;
+    font-size: 1.2rem;
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Replacing image with a CSS gradient design */
+    background: linear-gradient(135deg, #000, #434343);
+}
+
+.content {
+    color: white;
+    padding: 20px;
+}
+
+.details {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.hire-me-btn {
+    font-size: 20px;
+    color: orange;
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hire-me-btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* About Section */
+#about {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about .about-content {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#about img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+#skills {
+    background: #e9ecef;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section */
+#projects {
+    background: #6c757d;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.project-card {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card .disp {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.5s ease;
+}
+
+.project-card:hover .disp {
+    bottom: 0;
+}
+
+.project-card .disp .btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .disp .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+#contact {
+    background: #495057;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+#contact .card {
+    margin-top: 30px;
+}
+
+#contact .card img {
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* Footer */
+#footer {
+    background-color: rgb(81, 57, 104);
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+    .portfolio-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .navbar1 {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .photo img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .details {
+        font-size: 28px;
+    }
+
+    #about img {
+        width: 200px;
+        height: auto;
+    }
+
+    #projects .project-card img {
+        height: 200px;
+    }
+
+    #contact .card img {
+        width: 100%;
+        height: auto;
+    }
+}
